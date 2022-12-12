@@ -1,0 +1,49 @@
+@media screen and (min-width: 48em) {
+    header {
+        margin-bottom: 3rem;
+    }
+
+    .first-div {
+        padding-right: 1.5rem;
+    }
+
+    .header-nav a {
+        margin-right: 1.2rem;
+    }
+
+    .header-picture {
+        height: 7rem;
+        width: 7rem;
+        top: .2rem;
+        left: 1rem;
+        position: absolute;
+    }
+
+    .lupa {
+        display: none;
+    }
+
+    .header-nav form {
+        display: flex;
+        margin-right: 2rem;
+        position: relative;
+    }
+
+    .header-nav form input {
+        border: none;
+        height: 1.7rem;
+        border-radius: 14px;
+        outline: none;
+        padding-left: 10px;
+        padding-right: 25px;
+    }
+
+    .button-search {
+        background-color: transparent;
+        padding: 1px;
+        border: none;
+        position: absolute;
+        right: 5px;
+        top: 4px
+    }
+}

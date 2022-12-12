@@ -1,0 +1,56 @@
+.first-div {
+    background: #202020;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 2.5rem;
+    position: relative;
+    font-weight: 600;
+}
+
+.first-div a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.first-div span {
+    margin-right: 1rem;
+}
+
+
+.header-nav {
+    background-color: #a60f0b;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.header-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: .7rem;
+}
+
+.header-nav form {
+    display: none;
+}
+
+.header-picture {
+    height: 5.5rem;
+    width: 5.5rem;
+    top: .2rem;
+    left: 1rem;
+    position: absolute;
+}
+
+.header-picture img {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    margin-bottom: 1.5rem;
+}

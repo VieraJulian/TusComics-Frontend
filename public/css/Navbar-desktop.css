@@ -1,0 +1,53 @@
+@media (min-width: 64em) {
+    header {
+        margin-bottom: 6rem;
+    }
+
+    .first-div {
+        padding-right: 1.5rem;
+    }
+
+    .header-nav a {
+        margin-right: 1.2rem;
+    }
+
+    .header-picture {
+        height: 10rem;
+        width: 10rem;
+        top: .2rem;
+        left: 1rem;
+        position: absolute;
+    }
+}
+
+@media (min-width: 100em) {
+    .first-div {
+        height: 3rem;
+        justify-content: center;
+    }
+
+    .header-nav {
+        height: 4rem;
+        justify-content: center;
+    }
+
+    .header-picture {
+        top: .2rem;
+        left: 12rem;
+    }
+
+    .header-nav form {
+        margin-left: 3rem;
+    }
+
+    .header-nav form input {
+        height: 2.2rem;
+        border-radius: 20px;
+        padding-left: 10px;
+        padding-right: 25px;
+    }
+
+    .button-search {
+        top: 8px
+    }
+}
