@@ -1,0 +1,58 @@
+.titles-home {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.comics-title {
+    margin: 4rem 0 1rem 0
+}
+
+.coleccionables {
+    margin: 4rem 0 1rem 0
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured .comics .collectibles {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.product-article {
+    text-align: center;
+    padding: 2rem 0 1.5rem;
+}
+
+.product-article picture img {
+    width: 15rem;
+    height: 20rem;
+    object-fit: cover;
+    object-position: top;
+}
+
+.product-name {
+    font-size: 1.5rem;
+}
+
+.product-price {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.add-cart {
+    margin-top: 1rem;
+    height: 2rem;
+    background-color: rgb(47, 132, 250);
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1rem;
+}

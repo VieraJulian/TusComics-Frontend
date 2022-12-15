@@ -1,6 +1,6 @@
 @media (min-width: 64em) {
     header {
-        margin-bottom: 6rem;
+        margin-bottom: 1rem;
     }
 
     .first-div {
@@ -49,5 +49,9 @@
 
     .button-search {
         top: 8px
+    }
+
+    .cart-number {
+        border: none
     }
 }

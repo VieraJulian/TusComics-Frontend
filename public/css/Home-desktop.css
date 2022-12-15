@@ -1,0 +1,53 @@
+@media (min-width: 64em) {
+    .destacado {
+        margin-top: 2rem;
+    }
+
+    .featured {
+        display: grid;;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        column-gap: .5rem;
+    }
+
+    .comics {
+        display: grid;;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        column-gap: .5rem;
+    }
+
+    .collectibles {
+        display: grid;;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        column-gap: .5rem;
+    }
+}
+
+@media (min-width: 67em) {
+    .destacado {
+        margin-top: 2rem;
+    }
+
+    .featured {
+        display: grid;;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        column-gap: 1.5rem;
+    }
+
+    .comics {
+        display: grid;;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        column-gap: 1.5rem;
+    }
+
+    .collectibles {
+        display: grid;;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        column-gap: 1.5rem;
+    }
+}

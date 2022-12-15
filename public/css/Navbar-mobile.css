@@ -54,3 +54,18 @@
 header {
     margin-bottom: 1.5rem;
 }
+
+.cart-container {
+    position: relative;
+}
+
+.cart-number {
+    background: #202020;
+    padding: .4rem .7rem;
+    border-radius: 50%;
+    color: #ffffff;
+    position: absolute;
+    right: -5px;
+    top: -20px;
+    border: 1px solid #ffffff;
+}

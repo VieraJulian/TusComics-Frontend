@@ -17,6 +17,9 @@ function Navbar() {
                     <Link to="/">INICIO</Link>
                     <Link to="/">COMICS</Link>
                     <Link to="/">FIGURAS</Link>
+                    <div className='cart-container'>
+                        <Link to="/"><i class="fa-solid fa-cart-shopping"></i></Link><span className='cart-number'>0</span>
+                    </div>
                     <Link to="/"><i class="fa-solid fa-magnifying-glass lupa"></i></Link>
                     <form action="#">
                         <input type="text" />
