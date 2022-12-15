@@ -8,7 +8,7 @@ function Footer() {
             <footer>
                 <Link to="/">INICIO</Link>
                 <Link to="/comics">COMICS</Link>
-                <Link to="/">FIGURAS</Link>
+                <Link to="/collectibles">FIGURAS</Link>
                 <picture>
                     <Link to='/'><img src="/public/img/logo.png" alt="Logo" /></Link>
                 </picture>
