@@ -15,7 +15,7 @@ function Navbar() {
                 </picture>
                 <nav className='header-nav'>
                     <Link to="/">INICIO</Link>
-                    <Link to="/">COMICS</Link>
+                    <Link to="/comics">COMICS</Link>
                     <Link to="/">FIGURAS</Link>
                     <div className='cart-container'>
                         <Link to="/"><i class="fa-solid fa-cart-shopping"></i></Link><span className='cart-number'>0</span>
