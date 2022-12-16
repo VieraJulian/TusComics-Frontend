@@ -1,0 +1,37 @@
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-h1 {
+    margin: 1rem 0
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 28em;
+    width: 80%;
+}
+
+.profile-section img{
+    width: 100%;
+}
+
+.first-p {
+    font-weight: 600;
+    margin: 1.5rem 0 .5rem;
+}
+
+.second-p {
+    border: 1px solid #202020;
+    border-radius: 2px;
+    padding: 1rem .5rem;
+}
+
+.last-p {
+    margin-bottom: 5rem;
+}

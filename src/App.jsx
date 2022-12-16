@@ -8,19 +8,21 @@ import Comics from './pages/Comics'
 import Collectibles from './pages/Collectibles'
 import NewProduct from './pages/NewProduct'
 import EditProduct from './pages/EditProduct'
+import Profile from './pages/Profile'
 
 function App() {
   return (
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/register" element={<Register />}></Route>
-        <Route path="/login" element={<Login />}></Route>
-        <Route path="/comics" element={<Comics />}></Route>
+        <Route path='/' element={<Home />}></Route>
+        <Route path='/register' element={<Register />}></Route>
+        <Route path='/login' element={<Login />}></Route>
+        <Route path='/comics' element={<Comics />}></Route>
         <Route path='/collectibles' element={<Collectibles />}></Route>
         <Route path='/newProduct' element={<NewProduct />}></Route>
         <Route path='/editProduct' element={<EditProduct />}></Route>
+        <Route path='/profile' element={<Profile />}></Route>
       </Routes>
       <Footer />
     </>
