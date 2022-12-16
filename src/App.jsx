@@ -9,6 +9,7 @@ import Collectibles from './pages/Collectibles'
 import NewProduct from './pages/NewProduct'
 import EditProduct from './pages/EditProduct'
 import Profile from './pages/Profile'
+import EditProfile from './pages/EditProfile'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/newProduct' element={<NewProduct />}></Route>
         <Route path='/editProduct' element={<EditProduct />}></Route>
         <Route path='/profile' element={<Profile />}></Route>
+        <Route path='/editProfile' element={<EditProfile />}></Route>
       </Routes>
       <Footer />
     </>
