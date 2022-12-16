@@ -7,6 +7,7 @@ import Footer from './pages/Footer'
 import Comics from './pages/Comics'
 import Collectibles from './pages/Collectibles'
 import NewProduct from './pages/NewProduct'
+import EditProduct from './pages/EditProduct'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/comics" element={<Comics />}></Route>
         <Route path='/collectibles' element={<Collectibles />}></Route>
         <Route path='/newProduct' element={<NewProduct />}></Route>
+        <Route path='/editProduct' element={<EditProduct />}></Route>
       </Routes>
       <Footer />
     </>
