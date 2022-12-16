@@ -18,12 +18,12 @@ function Navbar() {
                     <Link to="/comics">COMICS</Link>
                     <Link to="/collectibles">FIGURAS</Link>
                     <div className='cart-container'>
-                        <Link to="/"><i class="fa-solid fa-cart-shopping"></i></Link><span className='cart-number'>0</span>
+                        <Link to="/"><i className="fa-solid fa-cart-shopping"></i></Link><span className='cart-number'>0</span>
                     </div>
-                    <Link to="/"><i class="fa-solid fa-magnifying-glass lupa"></i></Link>
+                    <Link to="/"><i className="fa-solid fa-magnifying-glass lupa"></i></Link>
                     <form action="#">
                         <input type="text" />
-                        <button className="button-search" type='submit'><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button className="button-search" type='submit'><i className="fa-solid fa-magnifying-glass"></i></button>
                     </form>
                 </nav>
 

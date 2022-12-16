@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './pages/Navbar'
+import Register from './pages/Register'
 import Login from './pages/Login'
 import Home from './pages/Home'
 import Footer from './pages/Footer'
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
+        <Route path="/register" element={<Register />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/comics" element={<Comics />}></Route>
         <Route path='/collectibles' element={<Collectibles />}></Route>

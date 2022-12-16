@@ -1,0 +1,40 @@
+.register-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-h1 {
+    margin: 1rem 0
+}
+
+.form-register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 28em;
+    width: 80%;
+}
+
+.form-register label {
+    font-weight: 600;
+    margin: 1.5rem 0 .5rem;
+}
+
+.form-register input {
+    height: 2rem;
+    outline: none;
+    padding: 0 .5rem;
+}
+
+.boton-register {
+    margin: 3rem 0 4rem;
+    height: 2rem;
+    background-color: rgb(47, 132, 250);
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1rem;
+}
