@@ -1,15 +1,15 @@
-.login-container {
+.newProduct-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.login-h1 {
+.newProduct-h1 {
     margin: 1rem 0
 }
 
-.form-login {
+.form-newProduct {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,18 +17,26 @@
     width: 80%;
 }
 
-.form-login label {
+.form-newProduct label {
     font-weight: 600;
     margin: 1.5rem 0 .5rem;
 }
 
-.input-login {
+.form-newProduct textarea {
+    resize: none;
+    height: 6rem;
+    width: 100%;
+    padding: 10px 12px;
+    outline: none;
+}
+
+.input-newProduct {
     height: 2rem;
     outline: none;
     padding: 0 .5rem;
 }
 
-.boton-login {
+.boton-newProduct {
     margin: 3rem 0 4rem;
     height: 2rem;
     background-color: rgb(47, 132, 250);
@@ -39,7 +47,7 @@
     font-size: 1rem;
 }
 
-.recordame {
+.check-newProduct {
     height: 1.5rem;
     width: 1.5rem;
 }

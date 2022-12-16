@@ -17,6 +17,8 @@ function Navbar() {
                     <Link to="/">INICIO</Link>
                     <Link to="/comics">COMICS</Link>
                     <Link to="/collectibles">FIGURAS</Link>
+                    <Link to="/newProduct"><i class="fa-solid fa-circle-plus"></i></Link>
+                    <Link to="/editProduct"><i class="fa-solid fa-pen-to-square"></i></Link>
                     <div className='cart-container'>
                         <Link to="/"><i className="fa-solid fa-cart-shopping"></i></Link><span className='cart-number'>0</span>
                     </div>
