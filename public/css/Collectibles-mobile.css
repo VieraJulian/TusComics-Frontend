@@ -5,3 +5,8 @@
     align-items: center;
     margin-bottom: 4rem;
 }
+
+.collectibles-container a {
+    text-decoration: none;
+    color: black
+}

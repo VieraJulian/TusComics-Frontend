@@ -1,22 +1,23 @@
 @media screen and (min-width: 48em) {
-    .featured {
-        display: grid;;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        column-gap: 2.5rem;
+    .featured, .comics, .collectibles {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .product-article {
+        width: 35%;
     }
 
-    .comics {
-        display: grid;;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        column-gap: 2.5rem;
+    .add-cart {
+        max-width: 15rem;
     }
+}
 
-    .collectibles {
-        display: grid;;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        column-gap: 2.5rem;
+@media (min-width: 52.5em) {
+    .featured, .comics, .collectibles {
+        max-width: 52.5em;
     }
 }

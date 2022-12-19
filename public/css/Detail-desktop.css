@@ -1,0 +1,19 @@
+@media (min-width: 64em) {
+    .detail-container {
+        margin: 5rem 0 4rem;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .detail-container img {
+        
+    }
+
+    .info-container p {
+        
+    }
+
+    .info-container {
+        
+    }
+}

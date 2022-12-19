@@ -1,0 +1,28 @@
+.detail-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-container picture {
+    margin-bottom: 1.5rem;
+}
+
+.detail-container img {
+    width: 18rem;
+}
+
+.p-title {
+    font-weight: 600;
+}
+
+.p-title-info {
+    margin-bottom: 2rem;
+}
+
+.info-container {
+    padding: 1rem;
+    margin-bottom: 4rem;
+    max-width: 320px;
+}

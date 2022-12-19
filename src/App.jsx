@@ -10,6 +10,7 @@ import NewProduct from './pages/NewProduct'
 import EditProduct from './pages/EditProduct'
 import Profile from './pages/Profile'
 import EditProfile from './pages/EditProfile'
+import Detail from './pages/Detail'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path='/editProduct' element={<EditProduct />}></Route>
         <Route path='/profile' element={<Profile />}></Route>
         <Route path='/editProfile' element={<EditProfile />}></Route>
+        <Route path='/detail' element={<Detail />}></Route>
       </Routes>
       <Footer />
     </>
