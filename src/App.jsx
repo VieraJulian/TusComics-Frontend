@@ -12,6 +12,7 @@ import Profile from './pages/Profile'
 import EditProfile from './pages/EditProfile'
 import Detail from './pages/Detail'
 import Cart from './pages/Cart'
+import Order from './pages/Order'
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path='/editProfile' element={<EditProfile />}></Route>
         <Route path='/detail' element={<Detail />}></Route>
         <Route path='/cart' element={<Cart />}></Route>
+        <Route path='/order' element={<Order />}></Route>
       </Routes>
       <Footer />
     </>

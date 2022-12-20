@@ -44,6 +44,7 @@
     border-radius: 6px;
     background-color: #ff2222;
     margin-bottom: 1rem;
+    cursor: pointer;
 }
 
 .cart-form {
@@ -61,10 +62,31 @@
 }
 
 .cart-form label {
-    margin: 1rem 0;
+    margin: 2rem 0 1rem;
 }
 
 .cart-form select {
     height: 2.5rem;
-    padding-left: 1rem;
+    padding: 0 1rem;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.p-total {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.cart-button {
+    margin-top: 2rem;
+    height: 2.5rem;
+    background-color: rgb(47, 132, 250);
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
 }

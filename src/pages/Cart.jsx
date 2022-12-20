@@ -19,7 +19,7 @@ function Cart() {
                     <div className='cart-section-div-2'>
                         <span>1</span><span>Estado de miedo</span><span>$3900</span><span>1</span><span>$3900</span>
                     </div><button className='delete-prod'><i className="fa-solid fa-trash"></i></button>
-                    <p>Total: $</p>
+                    <p className='p-total'>Total: $3900</p>
                 </section>
                 <form className='cart-form'>
                     <p>Terminar la compra</p>
@@ -30,7 +30,6 @@ function Cart() {
                         <option value="Correo Argentino">Correo Argentino</option>
                         <option value="Andreani">Andreani</option>
                         <option value="DHL">DHL</option>
-
                     </select>
                     <label>Tipo de pago</label>
                     <select>
@@ -39,6 +38,7 @@ function Cart() {
                         <option value="Tarjeta Débito">Tarjeta Débito</option>
                         <option value="Tarjeta Crédito">Tarjeta Crédito</option>
                     </select>
+                    <button type='submit' className='cart-button'>Comprar</button>
                 </form>
             </div>
         </>
