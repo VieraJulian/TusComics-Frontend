@@ -21,7 +21,7 @@ function Navbar() {
                     <Link to="/newProduct"><i className="fa-solid fa-circle-plus"></i></Link>
                     <Link to="/editProduct"><i className="fa-solid fa-pen-to-square"></i></Link>
                     <div className='cart-container'>
-                        <Link to="/"><i className="fa-solid fa-cart-shopping"></i></Link><span className='cart-number'>0</span>
+                        <Link to="/cart"><i className="fa-solid fa-cart-shopping"></i></Link><span className='cart-number'>0</span>
                     </div>
                     <Link to="/"><i className="fa-solid fa-magnifying-glass lupa"></i></Link>
                     <form action="#">

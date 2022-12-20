@@ -1,0 +1,9 @@
+@media screen and (min-width: 48em) {
+    .cart-section {
+        max-width: 45rem;
+    }
+
+    .cart-form {
+        max-width: 45rem;
+    }
+}

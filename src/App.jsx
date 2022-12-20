@@ -11,6 +11,7 @@ import EditProduct from './pages/EditProduct'
 import Profile from './pages/Profile'
 import EditProfile from './pages/EditProfile'
 import Detail from './pages/Detail'
+import Cart from './pages/Cart'
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path='/profile' element={<Profile />}></Route>
         <Route path='/editProfile' element={<EditProfile />}></Route>
         <Route path='/detail' element={<Detail />}></Route>
+        <Route path='/cart' element={<Cart />}></Route>
       </Routes>
       <Footer />
     </>
