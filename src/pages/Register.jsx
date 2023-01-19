@@ -21,8 +21,6 @@ function Register() {
 
             let result = await register(formData)
 
-            console.log(result)
-
             msgErrors[0].classList.remove("invalid")
             msgErrors[1].classList.remove("invalid")
             msgErrors[2].classList.remove("invalid")
@@ -49,7 +47,7 @@ function Register() {
                 msgErrors[1].classList.remove("invalid")
                 msgErrors[2].classList.remove("invalid")
                 msgErrors[3].classList.remove("invalid")
-                navigate("/")
+                navigate("/login")
             }
         } catch (error) {
             console.log(error)
