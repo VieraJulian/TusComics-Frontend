@@ -1,14 +1,35 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom';
 import "../../public/css/Navbar-mobile.css"
 import "../../public/css/Navbar-tablet.css"
 import "../../public/css/Navbar-desktop.css"
 
 function Navbar() {
+    const navigate = useNavigate();
+
+    let userLogged = JSON.parse(sessionStorage.getItem("user"));
+
+    let logout = () => {
+        Swal.fire({
+            title: 'Quieres salir?',
+            showDenyButton: true,
+            confirmButtonText: 'Cerrar sesión'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire('Sesión cerrada con éxito!', '', 'success')
+                sessionStorage.removeItem("user")
+                navigate("/login")
+            }
+        })
+    }
+
+    let header = userLogged === null ? <div><Link to="/login">LOGIN</Link><span>|</span><Link to="/register">REGISTRARSE</Link></div> : <Link to="#" onClick={logout}>LOGOUT</Link>
+
+    console.log(userLogged)
     return (
         <>
             <header>
                 <div className='first-div'>
-                    <Link to="/login">LOGIN</Link><span>|</span><Link to="/register">REGISTRARSE</Link>
+                    {header}
                 </div>
                 <picture className='header-picture'>
                     <img src="/public/img/logo.png" alt="Logo" />

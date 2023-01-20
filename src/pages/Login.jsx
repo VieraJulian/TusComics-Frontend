@@ -26,6 +26,8 @@ function Login() {
 
         try {
             let result = await login(body)
+            sessionStorage.setItem("user", JSON.stringify(result))
+
             let msgErrors = document.querySelectorAll(".msg-error");
 
             msgErrors[0].classList.remove("invalid")
