@@ -2,18 +2,22 @@ import { Link } from 'react-router-dom'
 import '../../public/css/Profile-mobile.css'
 
 function Profile() {
+    let userLogged = JSON.parse(sessionStorage.getItem("user"));
+
+    let urlImage = `http://localhost:3000/imagen?imagen=${userLogged.img}`
+
     return (
         <>
             <div className="profile-container">
                 <h1 className='profile-h1'>Mi perfil</h1>
                 <section className='profile-section'>
                     <picture>
-                        <img src="../../public/img/spider_ok.jpg" alt="" />
+                        <img src={urlImage} alt="" />
                     </picture>
                     <p className='first-p'>Nombre:</p>
-                    <p className='second-p'>Fulanito</p>
+                    <p className='second-p'>{userLogged.name}</p>
                     <p className='first-p'>E-mail:</p>
-                    <p className='second-p'>fulanito@gamil.com</p>
+                    <p className='second-p'>{userLogged.email}</p>
                     <Link to="/editProfile">Editar Perfil</Link>
                 </section>
                 <h1 className='profile-h1'>Mis Pedidos</h1>
