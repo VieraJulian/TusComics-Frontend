@@ -12,7 +12,7 @@ function Profile() {
                 <h1 className='profile-h1'>Mi perfil</h1>
                 <section className='profile-section'>
                     <picture>
-                        <img src={urlImage} alt="" />
+                        <img src={urlImage} alt="Imagen de perfil" />
                     </picture>
                     <p className='first-p'>Nombre:</p>
                     <p className='second-p'>{userLogged.name}</p>
