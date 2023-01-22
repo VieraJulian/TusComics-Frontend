@@ -4,7 +4,7 @@ function EditProduct() {
     return (
         <>
             <div className="editProduct-container">
-                <h1 className='editProduct-h1'>Nuevo Producto</h1>
+                <h1 className='editProduct-h1'>Editar Producto</h1>
                 <form className="form-editProduct" encType="multipart/form-data">
                     <label>Nombre:</label>
                     <input className='input-editProduct' type="text" />
