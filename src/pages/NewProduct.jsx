@@ -47,7 +47,7 @@ function NewProduct() {
                     }
                 })
             } else {
-                navigate("/detail")
+                navigate(`/detail/${result.id}`)
             }
         } catch (error) {
             console.error(error);

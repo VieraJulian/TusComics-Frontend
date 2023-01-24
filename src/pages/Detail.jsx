@@ -1,18 +1,29 @@
+import { useParams } from "react-router-dom";
 import '../../public/css/Detail-mobile.css'
 import '../../public/css/Detail-desktop.css'
+import { useEffect, useState } from "react";
+import { detail } from "../services/products"
 
 function Detail() {
+    const { id } = useParams();
+    const [product, setProduct] = useState([])
+    useEffect(() => {
+        detail(id).then(setProduct)
+    }, [id])
+
+    let urlImage = `http://localhost:3000/productImg?imagen=${product.img}`
+
     return (
         <>
             <div className='detail-container'>
                 <picture>
-                    <img src="../../public/img/Estado de Miedo.jpg" alt="" />
+                    <img src={urlImage} alt="" />
                 </picture>
                 <div className='info-container'>
-                    <p className='p-title'>Nombre:</p><p className='p-title-info'>Comic: estado de Miedo</p>
-                    <p className='p-title'>Precio:</p><p className='p-title-info'>$ 3900</p>
+                    <p className='p-title'>Nombre:</p><p className='p-title-info'>{product.name}</p>
+                    <p className='p-title'>Precio:</p><p className='p-title-info'>$ {product.price}</p>
                     <p className='p-title'>Descripción:</p>
-                    <p className='p-title-info'> en una ciudad donde el miedo esta en cada esquina y en cada rincon, el heroe decide hacer algo para que la ciudad nuevamente pueda ser segura</p>
+                    <p className='p-title-info'>{product.description}</p>
                     <button className='add-cart'>Comprar</button>
                 </div>
             </div>
