@@ -14,17 +14,41 @@ function NewProduct() {
             let description = document.getElementById("descriptionN").value;
             let price = document.getElementById("priceN").value;
             let market = document.getElementById("marketN").checked;
-            
+            let msgErrors = document.querySelectorAll(".msg-error");
+
             let formData = new FormData();
             formData.append("name", name);
             formData.append("description", description);
             formData.append("price", price);
             formData.append("market", market);
             formData.append("file", file.files[0]);
-            
-            let result = await newProduct(formData)
-            console.log(result);
 
+            let result = await newProduct(formData)
+
+            msgErrors[0].classList.remove("invalid")
+            msgErrors[1].classList.remove("invalid")
+            msgErrors[2].classList.remove("invalid")
+            msgErrors[3].classList.remove("invalid")
+
+            if (Array.isArray(result)) {
+                result.forEach(error => {
+                    if (error.param === "name") {
+                        msgErrors[0].innerText = error.msg
+                        msgErrors[0].classList.add("invalid")
+                    } else if (error.param === "description") {
+                        msgErrors[1].innerText = error.msg
+                        msgErrors[1].classList.add("invalid")
+                    } else if (error.param === "price") {
+                        msgErrors[2].innerText = error.msg
+                        msgErrors[2].classList.add("invalid")
+                    } else if (error.param === "image") {
+                        msgErrors[3].innerText = error.msg
+                        msgErrors[3].classList.add("invalid")
+                    }
+                })
+            } else {
+                navigate("/detail")
+            }
         } catch (error) {
             console.error(error);
         }
@@ -39,14 +63,18 @@ function NewProduct() {
                 <form encType="multipart/form-data" method="post" className="form-newProduct" onSubmit={onSubmit}>
                     <label>Nombre:</label>
                     <input className='input-newProduct' id="nameN" type="text" />
+                    <p className="msg-error"></p>
                     <label>Descripción:</label>
-                    <textarea type="text" id="descriptionN"/>
+                    <textarea type="text" id="descriptionN" />
+                    <p className="msg-error"></p>
                     <label>Precio</label>
-                    <input className='input-newProduct' type="number" id="priceN"/>
+                    <input className='input-newProduct' type="number" id="priceN" />
+                    <p className="msg-error"></p>
                     <label>Imagen</label>
-                    <input className='input-newProduct' type="file" id="fileN"/>
+                    <input className='input-newProduct' type="file" id="fileN" />
+                    <p className="msg-error"></p>
                     <label>Marcar:</label>
-                    <input  className="check-newProduct" type="checkbox" id="marketN"/>
+                    <input className="check-newProduct" type="checkbox" id="marketN" />
                     <button className="boton-newProduct" type='submit'>Enviar</button>
                 </form>
             </div>

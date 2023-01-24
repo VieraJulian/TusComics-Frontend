@@ -44,8 +44,6 @@ function Login() {
                     }
                 })
             } else {
-                msgErrors[0].classList.remove("invalid")
-                msgErrors[1].classList.remove("invalid")
                 navigate("/")
             }  
         } catch (error) {

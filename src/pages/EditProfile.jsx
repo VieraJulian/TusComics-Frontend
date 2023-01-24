@@ -46,10 +46,6 @@ function editProfile() {
                     }
                 })
             } else {
-                msgErrors[0].classList.remove("invalid")
-                msgErrors[1].classList.remove("invalid")
-                msgErrors[2].classList.remove("invalid")
-                msgErrors[3].classList.remove("invalid")
 
                 let userUpdated = {
                     id: userLogged.id,
