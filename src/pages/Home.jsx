@@ -23,7 +23,7 @@ function Home() {
     let mangas = [];
     if (products != null) {
         products.forEach(p => {
-            if (p.name.indexOf("Manga") !== -1 && market.length < 4) {
+            if (p.name.indexOf("Manga") !== -1 && mangas.length < 4) {
                 mangas.push(p)
             }
         });
@@ -32,7 +32,7 @@ function Home() {
     let comics = [];
     if (products != null) {
         products.forEach(p => {
-            if (p.name.indexOf("Comic") !== -1 && market.length < 4) {
+            if (p.name.indexOf("Comic") !== -1 && comics.length < 4) {
                 comics.push(p)
             }
         });
