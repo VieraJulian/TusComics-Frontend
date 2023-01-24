@@ -23,3 +23,13 @@ export async function detail(id) {
         console.log(error)
     }
 }
+
+export async function allProducts() {
+    try {
+        let query = await fetch(`http://localhost:3000/products/allProducts`)
+        let data = await query.json()
+        return data
+    } catch (error) {
+        console.log(error)
+    }
+}
