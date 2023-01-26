@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 function editProfile() {
     const navigate = useNavigate();
     let userLogged = JSON.parse(sessionStorage.getItem("user"));
-    console.log(userLogged)
+    
     const onSubmit = async (e) => {
         e.preventDefault();
         try {
@@ -22,7 +22,6 @@ function editProfile() {
             formData.append("email", userLogged.email);
 
             let result = await profileEdit(formData);
-            console.log(result)
 
             msgErrors[0].classList.remove("invalid")
             msgErrors[1].classList.remove("invalid")

@@ -38,7 +38,7 @@ function Navbar() {
         <Link to="/collectibles">FIGURAS</Link>
         <Link to="/profile"><i className="fa-solid fa-user"></i></Link>
         <Link to="/newProduct"><i className="fa-solid fa-circle-plus"></i></Link>
-        <Link to="/editProduct"><i className="fa-solid fa-pen-to-square"></i></Link></div>
+        {/* <Link to="/editProduct"><i className="fa-solid fa-pen-to-square"></i></Link> */}</div>
 
     let userN;
 

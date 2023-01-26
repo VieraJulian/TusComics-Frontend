@@ -1,10 +1,12 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import '../../public/css/Detail-mobile.css'
 import '../../public/css/Detail-desktop.css'
 import { useEffect, useState } from "react";
 import { detail } from "../services/products"
 
 function Detail() {
+    let userLogged = JSON.parse(sessionStorage.getItem("user"));
+
     const { id } = useParams();
     const [product, setProduct] = useState([])
     useEffect(() => {
@@ -12,6 +14,15 @@ function Detail() {
     }, [id])
 
     let urlImage = `http://localhost:3000/productImg?imagen=${product.img}`
+
+    let user = userLogged.admin === true ?
+        <div>
+            <button className='add-cart'>Comprar</button>
+            <Link to={`/editProduct/${product.id}`} className='editProduct'>Editar</Link>
+        </div> :
+        <div>
+            <button className='add-cart'>Comprar</button>
+        </div>
 
     return (
         <>
@@ -24,7 +35,7 @@ function Detail() {
                     <p className='p-title'>Precio:</p><p className='p-title-info'>$ {product.price}</p>
                     <p className='p-title'>Descripción:</p>
                     <p className='p-title-info'>{product.description}</p>
-                    <button className='add-cart'>Comprar</button>
+                    {user}
                 </div>
             </div>
         </>

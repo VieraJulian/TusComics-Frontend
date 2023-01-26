@@ -33,3 +33,19 @@ export async function allProducts() {
         console.log(error)
     }
 }
+
+export async function editProduct(id, formData) {
+    try {
+        let query = await fetch(`http://localhost:3000/products/edit/${id}`, {
+            method: "POST",
+            headers: {
+            },
+            body: formData
+        })
+
+        let data = await query.json()
+        return data
+    } catch (error) {
+        console.log(error)
+    }
+}

@@ -53,3 +53,14 @@
     width: 1.5rem;
     cursor: pointer;
 }
+
+.msg-error {
+    display: none;
+}
+
+.msg-error.invalid {
+    display: flex;
+    justify-content: center;
+    color: red;
+    margin: .5rem 0 .5rem;
+}

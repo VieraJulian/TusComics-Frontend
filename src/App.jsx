@@ -25,7 +25,7 @@ function App() {
         <Route path='/comics' element={<Comics />}></Route>
         <Route path='/collectibles' element={<Collectibles />}></Route>
         <Route path='/newProduct' element={<NewProduct />}></Route>
-        <Route path='/editProduct' element={<EditProduct />}></Route>
+        <Route path='/editProduct/:id' element={<EditProduct />}></Route>
         <Route path='/profile' element={<Profile />}></Route>
         <Route path='/editProfile' element={<EditProfile />}></Route>
         <Route path='/detail/:id' element={<Detail />}></Route>
