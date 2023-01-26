@@ -1,62 +1,42 @@
 import { Link } from 'react-router-dom'
 import '../../public/css/Comics-mobile.css'
+import { allProducts } from '../services/products'
+import { useEffect, useState } from 'react'
 
 function Comics() {
+    const [comics, setComics] = useState([])
+
+    useEffect(() => {
+        allProducts().then(setComics)
+    }, [])
+
+    let comicsAll = [];
+    if (comics != null) {
+        comics.forEach(p => {
+            if (p.name.indexOf("Comic") !== -1 || p.name.indexOf("Manga") !== -1) {
+                comicsAll.push(p)
+            }
+        });
+    }
+
     return (
         <>
             <div className='comics-container'>
                 <h2 className='titles-home comics-title'>Comics</h2>
                 <div className="comics">
-                    <article className='product-article'>
-                        <Link to="/detail">
-                            <picture>
-                                <img src="../../public/img/Estado de Miedo.jpg" alt="" />
-                            </picture>
-                            <p className='product-name'>Estado de miedo</p>
-                            <p className="product-price">$ 3900.00</p>
-                        </Link>
-                        <button className='add-cart'>Comprar</button>
-                    </article>
-                    <article className='product-article'>
-                        <Link to="/detail">
-                            <picture>
-                                <img src="../../public/img/Estado de Miedo.jpg" alt="" />
-                            </picture>
-                            <p className='product-name'>Estado de miedo</p>
-                            <p className="product-price">$ 3900.00</p>
-                        </Link>
-                        <button className='add-cart'>Comprar</button>
-                    </article>
-                    <article className='product-article'>
-                        <Link to="/detail">
-                            <picture>
-                                <img src="../../public/img/Estado de Miedo.jpg" alt="" />
-                            </picture>
-                            <p className='product-name'>Estado de miedo</p>
-                            <p className="product-price">$ 3900.00</p>
-                        </Link>
-                        <button className='add-cart'>Comprar</button>
-                    </article>
-                    <article className='product-article'>
-                        <Link to="/detail">
-                            <picture>
-                                <img src="../../public/img/Estado de Miedo.jpg" alt="" />
-                            </picture>
-                            <p className='product-name'>Estado de miedo</p>
-                            <p className="product-price">$ 3900.00</p>
-                        </Link>
-                        <button className='add-cart'>Comprar</button>
-                    </article>
-                    <article className='product-article'>
-                        <Link to="/detail">
-                            <picture>
-                                <img src="../../public/img/Estado de Miedo.jpg" alt="" />
-                            </picture>
-                            <p className='product-name'>Estado de miedo</p>
-                            <p className="product-price">$ 3900.00</p>
-                        </Link>
-                        <button className='add-cart'>Comprar</button>
-                    </article>
+                    {comicsAll.map((p, i) => {
+                        let urlImage = `http://localhost:3000/productImg?imagen=`
+                        return <article key={i} className='product-article'>
+                            <Link to={`/detail/${p.id}`}>
+                                <picture>
+                                    <img src={urlImage + p.img} alt="" />
+                                </picture>
+                                <p className='product-name'>{p.name}</p>
+                                <p className="product-price">$ {p.price}</p>
+                            </Link>
+                            <button className='add-cart'>Comprar</button>
+                        </article>
+                    })}
                 </div>
             </div>
         </>

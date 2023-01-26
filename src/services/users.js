@@ -21,7 +21,7 @@ export async function login(body) {
             headers: {
                 'Content-Type': 'application/json;charset=utf-8'
             },
-            body:  JSON.stringify(body)
+            body: JSON.stringify(body)
         })
 
         let data = await query.json()

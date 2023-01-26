@@ -20,20 +20,20 @@ function Home() {
         });
     }
 
-    let mangas = [];
+    let comics = [];
     if (products != null) {
         products.forEach(p => {
-            if (p.name.indexOf("Manga") !== -1 && mangas.length < 4) {
-                mangas.push(p)
+            if ((p.name.indexOf("Manga") !== -1 || p.name.indexOf("Comic") !== -1) && comics.length < 4) {
+                comics.push(p)
             }
         });
     }
 
-    let comics = [];
+    let collectibles = [];
     if (products != null) {
         products.forEach(p => {
-            if (p.name.indexOf("Comic") !== -1 && comics.length < 4) {
-                comics.push(p)
+            if ((p.name.indexOf("Colleccionable") !== -1) && collectibles.length < 4) {
+                collectibles.push(p)
             }
         });
     }
@@ -45,7 +45,7 @@ function Home() {
                 {market.map((p, i) => {
                     let urlImage = `http://localhost:3000/productImg?imagen=`
                     return  <article key={i} className='product-article'>
-                    <Link to="/detail">
+                    <Link to={`/detail/${p.id}`}>
                         <picture>
                             <img src={urlImage + p.img} alt="" />
                         </picture>
@@ -56,12 +56,12 @@ function Home() {
                 </article>
                 })}
             </div>
-            <h2 className='titles-home comics-title'>Comics</h2>
+            <h2 className='titles-home collectibles-title'>Comics</h2>
             <div className="comics">
-            {mangas.map((p, i) => {
+            {comics.map((p, i) => {
                     let urlImage = `http://localhost:3000/productImg?imagen=`
                     return  <article key={i} className='product-article'>
-                    <Link to="/detail">
+                    <Link to={`/detail/${p.id}`}>
                         <picture>
                             <img src={urlImage + p.img} alt="" />
                         </picture>
@@ -74,10 +74,10 @@ function Home() {
             </div>
             <h2 className='titles-home coleccionables'>Collecionables</h2>
             <div className="collectibles">
-            {comics.map((p, i) => {
+            {collectibles.map((p, i) => {
                     let urlImage = `http://localhost:3000/productImg?imagen=`
                     return  <article key={i} className='product-article'>
-                    <Link to="/detail">
+                    <Link to={`/detail/${p.id}`}>
                         <picture>
                             <img src={urlImage + p.img} alt="" />
                         </picture>
