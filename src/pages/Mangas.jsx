@@ -3,18 +3,18 @@ import '../../public/css/Comics-mobile.css'
 import { allProducts } from '../services/products'
 import { useEffect, useState } from 'react'
 
-function Comics() {
-    const [comics, setComics] = useState([])
+function Mangas() {
+    const [mangas, setMangas] = useState([])
 
     useEffect(() => {
-        allProducts().then(setComics)
+        allProducts().then(setMangas)
     }, [])
 
-    let comicsAll = [];
-    if (comics != null) {
-        comics.filter(p => {
-            if (p.category === "Comics") {
-                comicsAll.push(p)
+    let mangasAll = [];
+    if (mangas != null) {
+        mangas.filter(p => {
+            if (p.category === "Mangas") {
+                mangasAll.push(p)
             }
         });
     }
@@ -24,7 +24,7 @@ function Comics() {
             <div className='comics-container'>
                 <h2 className='titles-home comics-title'>Comics</h2>
                 <div className="comics">
-                    {comicsAll.map((p, i) => {
+                    {mangasAll.map((p, i) => {
                         let urlImage = `http://localhost:3000/productImg?imagen=`
                         return <article key={i} className='product-article'>
                             <Link to={`/detail/${p.id}`}>
@@ -43,4 +43,4 @@ function Comics() {
     )
 }
 
-export default Comics
+export default Mangas

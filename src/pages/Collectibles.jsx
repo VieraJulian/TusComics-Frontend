@@ -12,8 +12,8 @@ function collectibles() {
 
     let collectiblesAll = [];
     if (collectibles != null) {
-        collectibles.forEach(p => {
-            if (p.name.indexOf("Colleccionable") !== -1) {
+        collectibles.filter(p => {
+            if (p.category === "Coleccionables") {
                 collectiblesAll.push(p)
             }
         });

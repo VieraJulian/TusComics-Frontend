@@ -26,15 +26,18 @@ function Navbar() {
     let notUser = <div>
         <Link to="/">INICIO</Link>
         <Link to="/comics">COMICS</Link>
+        <Link to="/mangas">MANGAS</Link>
         <Link to="/collectibles">FIGURAS</Link></div>
     let userLogin = <div>
         <Link to="/">INICIO</Link>
         <Link to="/comics">COMICS</Link>
+        <Link to="/mangas">MANGAS</Link>
         <Link to="/collectibles">FIGURAS</Link>
         <Link to="/profile"><i className="fa-solid fa-user"></i></Link></div>
     let userAdmin = <div>
         <Link to="/">INICIO</Link>
         <Link to="/comics">COMICS</Link>
+        <Link to="/mangas">MANGAS</Link>
         <Link to="/collectibles">FIGURAS</Link>
         <Link to="/profile"><i className="fa-solid fa-user"></i></Link>
         <Link to="/newProduct"><i className="fa-solid fa-circle-plus"></i></Link>

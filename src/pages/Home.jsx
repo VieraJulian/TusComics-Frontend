@@ -41,7 +41,7 @@ function Home() {
     let collectibles = [];
     if (products != null) {
         products.filter(p => {
-            if (p.category === "Collectibles") {
+            if (p.category === "Coleccionables") {
                 collectibles.push(p)
             }
         });
@@ -81,7 +81,7 @@ function Home() {
                 </article>
                 })}
             </div>
-            <h2 className='titles-home collectibles-title'>Comics</h2>
+            <h2 className='titles-home collectibles-title'>Mangas</h2>
             <div className="comics">
             {mangas.map((p, i) => {
                     let urlImage = `http://localhost:3000/productImg?imagen=`

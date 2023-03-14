@@ -70,7 +70,7 @@ function NewProduct() {
                     <select id="categoryN">
                         <option value="Comics">Comics</option>
                         <option value="Mangas">Mangas</option>
-                        <option value="Collecionables">Collecionables</option>
+                        <option value="Coleccionables">Coleccionables</option>
                     </select>
                     <label>Descripción:</label>
                     <textarea type="text" id="descriptionN" />

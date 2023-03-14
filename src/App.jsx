@@ -13,6 +13,7 @@ import EditProfile from './pages/EditProfile'
 import Detail from './pages/Detail'
 import Cart from './pages/Cart'
 import Order from './pages/Order'
+import Mangas from './pages/Mangas'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/register' element={<Register />}></Route>
         <Route path='/login' element={<Login />}></Route>
         <Route path='/comics' element={<Comics />}></Route>
+        <Route path='/mangas' element={<Mangas />}></Route>
         <Route path='/collectibles' element={<Collectibles />}></Route>
         <Route path='/newProduct' element={<NewProduct />}></Route>
         <Route path='/editProduct/:id' element={<EditProduct />}></Route>
