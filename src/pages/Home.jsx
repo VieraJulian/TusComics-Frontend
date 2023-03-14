@@ -22,17 +22,26 @@ function Home() {
 
     let comics = [];
     if (products != null) {
-        products.forEach(p => {
-            if ((p.name.indexOf("Manga") !== -1 || p.name.indexOf("Comic") !== -1) && comics.length < 4) {
+        products.filter(p => {
+            if (p.category === "Comics") {
                 comics.push(p)
+            }
+        });
+    }
+
+    let mangas = [];
+    if (products != null) {
+        products.filter(p => {
+            if (p.category === "Mangas") {
+                mangas.push(p)
             }
         });
     }
 
     let collectibles = [];
     if (products != null) {
-        products.forEach(p => {
-            if ((p.name.indexOf("Colleccionable") !== -1) && collectibles.length < 4) {
+        products.filter(p => {
+            if (p.category === "Collectibles") {
                 collectibles.push(p)
             }
         });
@@ -59,6 +68,22 @@ function Home() {
             <h2 className='titles-home collectibles-title'>Comics</h2>
             <div className="comics">
             {comics.map((p, i) => {
+                    let urlImage = `http://localhost:3000/productImg?imagen=`
+                    return  <article key={i} className='product-article'>
+                    <Link to={`/detail/${p.id}`}>
+                        <picture>
+                            <img src={urlImage + p.img} alt="" />
+                        </picture>
+                        <p className='product-name'>{p.name}</p>
+                        <p className="product-price">$ {p.price}</p>
+                    </Link>
+                    <button className='add-cart'>Comprar</button>
+                </article>
+                })}
+            </div>
+            <h2 className='titles-home collectibles-title'>Comics</h2>
+            <div className="comics">
+            {mangas.map((p, i) => {
                     let urlImage = `http://localhost:3000/productImg?imagen=`
                     return  <article key={i} className='product-article'>
                     <Link to={`/detail/${p.id}`}>

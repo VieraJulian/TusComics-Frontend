@@ -11,6 +11,7 @@ function NewProduct() {
         try {
             let file = document.getElementById("fileN");
             let name = document.getElementById("nameN").value;
+            let category = document.getElementById("categoryN").value;
             let description = document.getElementById("descriptionN").value;
             let price = document.getElementById("priceN").value;
             let market = document.getElementById("marketN").checked;
@@ -18,6 +19,7 @@ function NewProduct() {
 
             let formData = new FormData();
             formData.append("name", name);
+            formData.append("category", category);
             formData.append("description", description);
             formData.append("price", price);
             formData.append("market", market);
@@ -64,6 +66,12 @@ function NewProduct() {
                     <label>Nombre:</label>
                     <input className='input-newProduct' id="nameN" type="text" />
                     <p className="msg-error"></p>
+                    <label>Categoría:</label>
+                    <select id="categoryN">
+                        <option value="Comics">Comics</option>
+                        <option value="Mangas">Mangas</option>
+                        <option value="Collecionables">Collecionables</option>
+                    </select>
                     <label>Descripción:</label>
                     <textarea type="text" id="descriptionN" />
                     <p className="msg-error"></p>

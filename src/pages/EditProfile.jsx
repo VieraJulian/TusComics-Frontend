@@ -15,6 +15,7 @@ function editProfile() {
             let newPasswordN = document.getElementById("newPasswordN").value;
             let msgErrors = document.querySelectorAll(".msg-error");
             let formData = new FormData();
+
             formData.append("name", nombreN);
             formData.append("password", passwordN);
             formData.append("newPassword", newPasswordN);
