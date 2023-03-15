@@ -15,7 +15,7 @@ function Detail() {
 
     let urlImage = `http://localhost:3000/productImg?imagen=${product.img}`
 
-    let user = userLogged.admin === true ?
+    let user = userLogged && userLogged.admin === true ?
         <div>
             <button className='add-cart'>Comprar</button>
             <Link to={`/editProduct/${product.id}`} className='editProduct'>Editar</Link>

@@ -26,32 +26,32 @@ function Profile() {
                 </div>
                 <div className='profile-container-2'>
                     <h1 className='profile-h1'>Mis Pedidos</h1>
+                    <div className='first-div-profile'>
+                        <span>#</span><span>Fecha</span><span className='envio'>Envío</span><span>Pago</span><span>Total</span>
+                    </div>
                     <section className='pedidos-section'>
-                        <div className='first-div-profile'>
-                            <span>#</span><span>Fecha</span><span className='envio'>Envío</span><span>Pago</span><span>Total</span>
-                        </div>
-                        <div>
+                        <div className='order-Container'> 
                             <div className='second-div-profile'>
                                 <span>1</span><span>2022/05/04 10:00</span><span className='envio'>Correo Argentino</span><span>Efectivo</span><span>$1220</span>
                             </div>
                             <div className='viewOrderButton-container'>
-                                <button><p>Ver detalle del pedido</p></button>
+                                <button><p>Ver detalle del pedido</p><i class="fa-solid fa-eye"></i></button>
                             </div>
                         </div>
-                        <div>
+                        <div className='order-Container'> 
                             <div className='second-div-profile'>
                                 <span>2</span><span>2022/05/04 10:00</span><span className='envio'>Correo Argentino</span><span>Efectivo</span><span>$8900</span>
                             </div>
                             <div className='viewOrderButton-container'>
-                                <button><p>Ver detalle del pedido</p></button>
+                                <button><p>Ver detalle del pedido</p><i class="fa-solid fa-eye"></i></button>
                             </div>
                         </div>
-                        <div>
+                        <div className='order-Container'> 
                             <div className='second-div-profile'>
                                 <span>3</span><span>2022/05/04 10:00</span><span className='envio'>Correo Argentino</span><span>Efectivo</span><span>$2390</span>
                             </div>
                             <div className='viewOrderButton-container'>
-                                <button><p>Ver detalle del pedido</p></button>
+                                <button><p>Ver detalle del pedido</p><i class="fa-solid fa-eye"></i></button>
                             </div>
                         </div>
                     </section>

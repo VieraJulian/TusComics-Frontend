@@ -69,3 +69,119 @@ header {
     top: -20px;
     border: 1px solid #ffffff;
 }
+
+.container-cart-products {
+    z-index: 10;
+    position: absolute;
+    background-color: #ffffff;
+    width: 300px;
+    top: 24px;
+    right: 10px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.row-product {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+}
+
+.cart-info {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-total {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.total-pagar {
+    margin-left: .5rem;
+}
+
+.cart-buttons {
+    background-color: royalblue;
+    width: 100%;
+}
+
+.cart-info button {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: none;
+    border-radius: 3px;
+}
+
+.btnQuantityLess {
+    margin-left: .5rem;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btnQuantityMore {
+    margin-left: .5rem;
+    background-color: #a60f0b;
+    color: #fff;
+    cursor: pointer;
+}
+
+.cart-product-delete {
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+
+.cart-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.cart-full {
+    height: 3rem;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    background-color: #a60f0b;
+    cursor: pointer;
+}
+
+.btn-clear-all{
+    height: 3rem;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    background-color: #000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+
+.close-cart-container {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: .5rem .5rem .7rem;
+    background-color: #000;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.fa-circle-xmark {
+    font-size: 1.5rem;
+    cursor: pointer;
+}

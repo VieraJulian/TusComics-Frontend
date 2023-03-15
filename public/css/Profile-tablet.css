@@ -7,4 +7,32 @@
     .second-p {
         max-width: 48em;
     }
+
+    .viewOrderButton-container p{
+        display: none;
+    }
+
+    .order-Container {
+        position: relative;
+    }
+
+    .viewOrderButton-container button{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3rem;
+        height: 2.5rem;
+        right: -60px;
+        top: 0
+    }
+
+    .fa-eye {
+        display: block;
+    }
+
+    .second-div-profile {
+        flex-grow: 1;
+    }
+    
 }

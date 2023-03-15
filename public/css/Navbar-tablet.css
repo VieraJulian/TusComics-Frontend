@@ -50,4 +50,11 @@
         right: 5px;
         top: 4px
     }
+
+    .container-cart-products {
+        width: 430px;
+        top: 24px;
+        right: -20px;
+        
+    }
 }

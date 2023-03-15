@@ -1,15 +1,9 @@
 @media (min-width: 64em) {
-    .profile-container {
-        flex-direction: row;
-        align-items: center;
-    }
-
     .profile-container-1{
-        padding: 1rem;
+        
     }
 
     .profile-container-2 {
-        width: 28em;
-        padding: 1rem;
+        
     }
 }

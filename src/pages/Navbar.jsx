@@ -63,15 +63,68 @@ function Navbar() {
                     <img src="/public/img/logo.png" alt="Logo" />
                 </picture>
                 <nav className='header-nav'>
-                    {userN}
-                    <div className='cart-container'>
-                        <Link to="/cart"><i className="fa-solid fa-cart-shopping"></i></Link><span className='cart-number'>0</span>
-                    </div>
-                    <Link to="/"><i className="fa-solid fa-magnifying-glass lupa"></i></Link>
                     <form action="#">
                         <input type="text" />
                         <button className="button-search" type='submit'><i className="fa-solid fa-magnifying-glass"></i></button>
                     </form>
+                    {userN}
+                    {/* <Link to="/"><i className="fa-solid fa-magnifying-glass lupa"></i></Link> */}
+                    <div className='cart-container'>
+                        <Link to="/cart"><i className="fa-solid fa-cart-shopping"></i></Link><span className='cart-number'>0</span>
+                        <div className='container-cart-products'>
+                            <div className='close-cart-container'><i class="fa-solid fa-circle-xmark"></i></div>
+                            <div className='row-product'>
+                                <div className='cart-info'>
+                                    <p>1</p>
+                                    <p>OnePiece</p>
+                                    <p>$ 3000</p>
+                                    <div>
+                                        <button className="btnQuantityMore">+</button>
+                                        <button className="btnQuantityLess">-</button>
+                                    </div>
+                                </div>
+                                <div className='cart-product-delete'>
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </div>
+                            </div>
+                            <div className='row-product'>
+                                <div className='cart-info'>
+                                    <p>1</p>
+                                    <p>OnePiece</p>
+                                    <p>$ 3000</p>
+                                    <div>
+                                        <button className="btnQuantityMore">+</button>
+                                        <button className="btnQuantityLess">-</button>
+                                    </div>
+                                </div>
+                                <div className='cart-product-delete'>
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </div>
+                            </div>
+                            <div className='row-product'>
+                                <div className='cart-info'>
+                                    <p>1</p>
+                                    <p>OnePiece</p>
+                                    <p>$ 3000</p>
+                                    <div>
+                                        <button className="btnQuantityMore">+</button>
+                                        <button className="btnQuantityLess">-</button>
+                                    </div>
+                                </div>
+                                <div className='cart-product-delete'>
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </div>
+                            </div>
+                            <div className="cart-total">
+                                <h3>Total:</h3>
+                                <span className="total-pagar">$3000</span>
+                            </div>
+                            <div className='cart-buttons'>
+                                <button className="cart-full">Pagar ahora</button>
+                                <button className="btn-clear-all">Vaciar carrito</button>
+                            </div>
+                        </div>
+                    </div>
                 </nav>
 
             </header>

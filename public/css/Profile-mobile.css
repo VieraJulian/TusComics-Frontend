@@ -75,7 +75,6 @@
     margin-bottom: 5rem;
 }
 
-.first-div-profile,
 .second-div-profile {
     display: flex;
     flex-direction: row;
@@ -88,6 +87,9 @@
     color: #ffffff;
     margin-bottom: 1rem;
     padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .second-div-profile {
@@ -119,7 +121,11 @@
 }
 
 .pedidos-section div {
-    margin-bottom: 1em;
+    margin-bottom: .5em;
+}
+
+.fa-eye {
+    display: none;
 }
 
 @media screen and (min-width: 26.7em) {
@@ -128,6 +134,10 @@
     }
 
     .profile-container-1 {
+        max-width: 26.7em;
+    }
+
+    .first-div-profile {
         max-width: 26.7em;
     }
 }
