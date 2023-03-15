@@ -22,7 +22,7 @@ function Mangas() {
     return (
         <>
             <div className='comics-container'>
-                <h2 className='titles-home comics-title'>Comics</h2>
+                <h2 className='titles-home comics-title'>Mangas</h2>
                 <div className="comics">
                     {mangasAll.map((p, i) => {
                         let urlImage = `http://localhost:3000/productImg?imagen=`

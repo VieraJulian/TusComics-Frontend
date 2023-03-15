@@ -1,0 +1,10 @@
+@media screen and (min-width: 48em) {
+    .envio {
+        display: flex;
+    }
+
+    .first-p,
+    .second-p {
+        max-width: 48em;
+    }
+}

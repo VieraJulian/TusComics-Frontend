@@ -9,12 +9,31 @@
     margin: 1rem 0
 }
 
+.profile-section picture {
+    width: 14rem;
+}
+
+.profile-container-1 {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-container-2 {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 .profile-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 28em;
-    width: 80%;
+    align-items: center;
+    width: 100%;
 }
 
 .profile-section img{
@@ -22,11 +41,13 @@
 }
 
 .first-p {
+    width: 100%;
     font-weight: 600;
     margin: 1.5rem 0 .5rem;
 }
 
 .second-p {
+    width: 100%;
     border: 1px solid #202020;
     border-radius: 2px;
     padding: 1rem .5rem;
@@ -49,36 +70,64 @@
 .pedidos-section {
     display: flex;
     flex-direction: column;;
-    max-width: 35em;
-    width: 80%;
+    max-width: 28em;
+    width: 100%;
     margin-bottom: 5rem;
 }
 
-.pedidos-section div {
+.first-div-profile,
+.second-div-profile {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
+    justify-content: space-between
 }
 
 .first-div-profile {
     background: #202020;
     color: #ffffff;
     margin-bottom: 1rem;
+    padding: 1rem;
 }
 
 .second-div-profile {
     border-top: 1px solid #202020;
     margin-bottom: .5rem;
+    padding: .5rem;
+    text-align: center;
 }
 
-.pedidos-section button {
-    width: 2.5rem;
+.envio {
+    display: none;
+}
+
+.viewOrderButton-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewOrderButton-container button {
+    width: 100%;
     height: 2rem;
-    background-color: #ecf322;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-bottom: 1rem;
+    background: #202020;
+    color: #fff
+}
+
+.pedidos-section div {
+    margin-bottom: 1em;
+}
+
+@media screen and (min-width: 26.7em) {
+    .pedidos-section {
+    max-width: 26.7em;
+    }
+
+    .profile-container-1 {
+        max-width: 26.7em;
+    }
 }

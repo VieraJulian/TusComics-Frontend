@@ -28,8 +28,8 @@
 }
 
 .editProduct {
+    display: block;
     padding: .5rem 6.3rem;
-    margin-top: 1rem;
     height: 2rem;
     background-color: rgb(47, 132, 250);
     width: 100%;
@@ -39,11 +39,10 @@
     font-size: 1rem;
     cursor: pointer;
     text-decoration: none;
+    text-align: center;
 
 }
 
 @media screen and (min-width: 48em) {
-    .editProduct {
-        max-width: 15rem;
-    }
+    
 }

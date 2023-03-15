@@ -56,8 +56,6 @@ function NewProduct() {
         }
     }
 
-
-
     return (
         <>
             <div className="newProduct-container">
@@ -67,7 +65,8 @@ function NewProduct() {
                     <input className='input-newProduct' id="nameN" type="text" />
                     <p className="msg-error"></p>
                     <label>Categoría:</label>
-                    <select id="categoryN">
+                    <select id="categoryN" className='input-categories'>
+                        <option value="" selected >Seleccione una categoría</option>
                         <option value="Comics">Comics</option>
                         <option value="Mangas">Mangas</option>
                         <option value="Coleccionables">Coleccionables</option>

@@ -36,6 +36,11 @@
     padding: 0 .5rem;
 }
 
+.input-categories {
+    height: 2rem;
+    padding: 0 .5rem;
+}
+
 .boton-newProduct {
     margin: 3rem 0 4rem;
     height: 2rem;
