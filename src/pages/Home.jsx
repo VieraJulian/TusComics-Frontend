@@ -97,7 +97,7 @@ function Home() {
                 </article>
                 })}
             </div>
-            <h2 className='titles-home coleccionables'>Collecionables</h2>
+            <h2 className='titles-home coleccionables-title'>Collecionables</h2>
             <div className="collectibles">
             {collectibles.map((p, i) => {
                     let urlImage = `http://localhost:3000/productImg?imagen=`
